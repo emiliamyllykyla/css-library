@@ -1,0 +1,55 @@
+.btn {
+  display: inline-block;
+  padding: $base-padding * 0.7 $base-padding * 1.2;
+  text-transform: capitalize;
+  font-size: $base-font-size * map-get($sizes, "m");
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  color: white;
+  text-decoration: none;
+}
+
+:root {
+  --btn-white: var(--white);
+  --btn-light: var(--color-00);
+  --btn-dark: var(--color-02);
+
+  --btn-white-darken: var(--color-00);
+  --btn-light-darken: var(--color-01);
+  --btn-dark-darken: var(--color-03);
+
+  @each $accent, $hex in $accents {
+    --btn-#{$accent}: #{$hex};
+  }
+
+  @each $context, $hex in $contextual-colors {
+    --btn-#{$context}: #{$hex};
+  }
+}
+
+$button-types: "primary", "secondary", "white", "light", "dark", "danger",
+  "warning", "success", "info";
+$button-types-light: "white", "light";
+
+@each $type in $button-types {
+  .btn-#{$type} {
+    background-color: var(--btn-#{$type});
+    border: 1px solid var(--btn-#{$type});
+  }
+
+  .btn-#{$type}:hover {
+    background-color: var(--btn-#{$type}-darken);
+    border: 1px solid var(--btn-#{$type}-darken);
+  }
+
+  @if index($button-types-light, $type) {
+    .btn-#{$type} {
+      color: var(--color-03);
+    }
+  }
+}
+
+.btn-disabled {
+  pointer-events: none;
+  filter: opacity(50%);
+}

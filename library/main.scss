@@ -1,0 +1,30 @@
+// base: variables, mixins, utilis
+@import "_theme-colors.scss";
+@import "_variables.scss";
+@import "_utilities.scss";
+
+// layout: flex/grid/containers
+@import "_breakpoints.scss";
+@import "_flex.scss";
+@import "_grid.scss";
+
+// components: buttons/nav/etc
+@import "_button.scss";
+@import "_card.scss";
+@import "_link.scss";
+@import "_icons.scss";
+@import "_nav.scss";
+@import "_dropdown.scss";
+@import "_footer.scss";
+@import "_hero.scss";
+
+// other 
+body {
+  background-color: var(--bg-primary);
+  color: var(--fg-primary);
+}
+
+button,
+a {
+  cursor: pointer;
+}

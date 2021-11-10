@@ -1,0 +1,15 @@
+.link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--accent-secondary);
+}
+
+.link:hover, 
+.link-active {
+  color: var(--accent-secondary-darken);
+}
+
+.link-disabled {
+  pointer-events: none;
+  filter: opacity(50%);
+}

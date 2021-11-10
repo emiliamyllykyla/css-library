@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>CSS Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="library/nav.js"></script>
+  </head>
+  <body>
+    <div
+      class="
+        nav
+        nav-absolute
+        nav-transparent
+        nav-transparent-on
+        nav-font-white
+        nav-sticky
+      "
+    >
+      <div class="nav-content">
+        <h1 class="nav-title mr-s"><a href="#/">CSS Library</a></h1>
+        <nav>
+          <button id="nav-toggle" class="icon-bars sm-hide">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="nav-menu" class="nav-menu sm-show">
+            <li><a class="link link-active" href="#/">Home</a></li>
+            <li><a class="link" href="pages/components.html">Components</a></li>
+            <li><a class="link" href="pages/utilities.html">Utilities</a></li>
+            <li><a class="link" href="pages/flexandgrid.html">Flex & Grid</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <img
+        class="hero-img"
+        src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+        alt="hero"
+      />
+      <div class="hero-content p-l">
+        <h1 class="mb-s font-xl font-white">A CSS Library for easy styling</h1>
+        <p class="mb-l font-white">
+          This is a CSS Library I made as a practice project. The purpose was to
+          make easily usable CSS classes for basic styling. A large part of the
+          library I wrote using SASS. Start exploring!
+        </p>
+        <a href="#section" class="btn btn-white m-s"> Learn more »</a>
+      </div>
+    </section>
+
+    <main class="mrl-auto">
+      <div id="section" class="section">
+        <div class="mtb-xxl grid">
+          <div class="card col-12 col-6-sm col-4-md m-m">
+            <img class="card-img" src="images/components.png" alt="Card" />
+            <div class="card-content">
+              <h3 class="card-title">Components</h3>
+              <p class="card-p">
+                Find easy-use component: Buttons, Navbar, Footer, Card (like
+                this one) and icons!
+              </p>
+              <a href="pages/components.html" class="btn btn-primary"
+                >See Components</a
+              >
+            </div>
+          </div>
+
+          <div class="card col-12 col-6-sm col-4-md m-m">
+            <img class="card-img" src="images/utilities.png" alt="Card" />
+            <div class="card-content">
+              <h3 class="card-title">Utilities</h3>
+              <p class="card-p">
+                See examples of how to add font-size, margins and paddings.
+              </p>
+              <a href="pages/utilities.html" class="btn btn-primary">See Utilities</a>
+            </div>
+          </div>
+
+          <div class="card col-12 col-6-sm col-4-md m-m">
+            <img class="card-img" src="images/flexandgrid.png" alt="Card" />
+            <div class="card-content">
+              <h3 class="card-title">Flex & Grid</h3>
+              <p class="card-p">
+                Make simple layouts by using either flex or grid classes!
+              </p>
+              <a href="pages/flexandgrid.html" class="btn btn-primary"
+                >See Flex & Grid</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content mtb-m">
+        <ul class="footer-menu mb-m">
+          <li><a class="link" href="#">Home</a></li>
+          <li><a class="link" href="pages/components.html">Components</a></li>
+          <li><a class="link" href="pages/utilities.html">Utilities</a></li>
+          <li><a class="link" href="pages/flexandgrid.html">Flex & Grid</a></li>
+        </ul>
+        <h2>CSS Library</h2>
+      </div>
+    </footer>
+  </body>
+</html>

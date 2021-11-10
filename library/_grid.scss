@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+}
+
+@mixin columns($breakpoint: "") {
+  @for $i from 1 through 12 {
+    .col-#{$i}#{$breakpoint} {
+      grid-column: span #{$i};
+    }
+    @for $j from 1 through 13 {
+      .col-#{$i}-#{$j}#{$breakpoint} {
+        grid-column: #{$i} / #{$j};
+      }
+    }
+  }
+}
+
+@include columns;
+
+@include sm {
+  @include columns("-sm");
+}
+@include md {
+  @include columns("-md");
+}
+@include lg {
+  @include columns("-lg");
+}
+@include xl {
+  @include columns("-xl");
+}

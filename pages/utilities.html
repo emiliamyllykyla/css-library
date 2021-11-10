@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>CSS Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../library/nav.js"></script>
+  </head>
+  <body>
+    <div class="nav nav-sticky">
+      <div class="nav-content">
+        <h1 class="nav-title mr-s"><a href="../index.html">CSS Library</a></h1>
+        <nav>
+          <button id="nav-toggle" class="icon-bars sm-hide">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="nav-menu" class="nav-menu sm-show">
+            <li><a class="link" href="../index.html">Home</a></li>
+            <li><a class="link" href="components.html">Components</a></li>
+            <li><a class="link link-active" href="#/">Utilities</a></li>
+            <li><a class="link" href="flexandgrid.html">Flex & Grid</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main class="mrl-auto">
+      <div class="mtb-xxl">
+        <h2 class="mtb-l">Font sizes</h2>
+        <p class="font-xs">Font-xs: extra small font</p>
+        <p class="font-s">Font-s: small font</p>
+        <p class="font-m">Font-m: medium font</p>
+        <p class="font-l">Font-l: large font</p>
+        <p class="font-xl">Font-xl: extra large font</p>
+        <p class="font-xxl">Font-xxl: extra extra large font</p>
+        <pre>
+          <code class="code-block p-m">&lt;p class="font-xs">Font-xs: extra small font&lt;/p>
+&lt;p class="font-s">Font-s: small font&lt;/p>
+&lt;p class="font-m">Font-m: medium font&lt;/p>
+&lt;p class="font-l">Font-l: large font&lt;/p>
+&lt;p class="font-xl">Font-xl: extra large font&lt;/p>
+&lt;p class="font-xxl">Font-xxl: extra extra large font&lt;/p></code>
+        </pre>
+      </div>
+
+      <div class="mb-xxl">
+        <h2 class="mtb-l">Padding & Margin</h2>
+        <div class="mb-xl">
+          <h3 class="mb-s">Notation</h3>
+          <div class="mb-l">
+            <p class="mb-xs">( property ) ( side(s) * ) - ( size )</p>
+            <p class="font-s font-fg-secondary">
+              * Optional. If omitted, style will be applied to all sides of the
+              element.
+            </p>
+          </div>
+
+          <div class="flex-row">
+            <div class="flex-item">
+              <h4 class="mb-s">Property</h4>
+              <table class="mb-m">
+                <tbody>
+                  <tr>
+                    <th class="th pr-s">p</th>
+                    <td>padding</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">m</th>
+                    <td>margin</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="flex-item">
+              <h4 class="mb-s">Side(s)</h4>
+              <table class="mb-m">
+                <tbody>
+                  <tr>
+                    <th class="th pr-s">t</th>
+                    <td>top</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">r</th>
+                    <td>right</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">b</th>
+                    <td>bottom</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">l</th>
+                    <td>left</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">rl</th>
+                    <td>right & left</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">tb</th>
+                    <td>top & bottom</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="flex-item">
+              <h4 class="mb-s">Size</h4>
+              <table class="mb-m">
+                <tbody>
+                  <tr>
+                    <th class="th pr-s">0</th>
+                    <td>0rem</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">xs</th>
+                    <td>0.3rem</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">s</th>
+                    <td>0.6rem</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">m</th>
+                    <td>0.75rem</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">l</th>
+                    <td>1.5rem</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">xl</th>
+                    <td>3rem</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">xl</th>
+                    <td>4,5rem</td>
+                  </tr>
+                  <tr>
+                    <th class="th pr-s">auto</th>
+                    <td>auto</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <pre>
+            <code class="code-block p-m">// Examples:
+
+.p-s {
+  padding: 0.6rem;
+}
+
+.mtb-xs {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}</code>
+          </pre>
+        </div>
+        <div class="mb-xl">
+          <h3 class="mtb-s">Padding Examples</h3>
+          <p class="mb-s">
+            In the following examples padding is set to the wrapper div.
+          </p>
+          <div class="padding-example-div">
+            <div class="padding-example-outer p-0 mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>p-0</p>
+              </div>
+            </div>
+            <div class="padding-example-outer p-xs mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>p-xs</p>
+              </div>
+            </div>
+            <div class="padding-example-outer p-s mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>p-s</p>
+              </div>
+            </div>
+            <div class="padding-example-outer p-m mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>p-m</p>
+              </div>
+            </div>
+            <div class="padding-example-outer p-l mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>p-l</p>
+              </div>
+            </div>
+            <div class="padding-example-outer p-xl mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>p-xl</p>
+              </div>
+            </div>
+            <div class="padding-example-outer p-xxl mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>p-xxl</p>
+              </div>
+            </div>
+          </div>
+          <pre>
+          <code class="code-block p-m">&lt;div class="p-0 mr-m mb-m">
+  &lt;div>
+    &lt;p>p-0&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="p-xs mr-m mb-m">
+  &lt;div>
+    &lt;p>p-xs&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="p-s mr-m mb-m">
+  &lt;div>
+    &lt;p>p-s&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="p-m mr-m mb-m">
+  &lt;div>
+    &lt;p>p-m&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="p-l mr-m mb-m">
+  &lt;div>
+    &lt;p>p-l&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="p-xl mr-m mb-m">
+  &lt;div>
+    &lt;p>p-xl&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="p-xxl mr-m mb-m">
+  &lt;div>
+    &lt;p>p-xxl&lt;/p>
+  &lt;/div>
+&lt;/div></code>
+        </pre>
+
+          <div class="padding-example-div">
+            <div class="padding-example-outer pt-l mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>pt-l</p>
+              </div>
+            </div>
+            <div class="padding-example-outer pr-l mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>pr-l</p>
+              </div>
+            </div>
+            <div class="padding-example-outer pb-l mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>pb-l</p>
+              </div>
+            </div>
+            <div class="padding-example-outer pl-l mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>pl-l</p>
+              </div>
+            </div>
+            <div class="padding-example-outer ptb-l mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>ptb-l</p>
+              </div>
+            </div>
+            <div class="padding-example-outer prl-l mr-m mb-m">
+              <div class="padding-example-inner">
+                <p>prl-l</p>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            <code class="code-block p-m">&lt;div class="pt-l mr-m mb-m">
+  &lt;div>
+    &lt;p>pt-l&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="pr-l mr-m mb-m">
+  &lt;div>
+    &lt;p>pr-l&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="pb-l mr-m mb-m">
+  &lt;div>
+    &lt;p>pb-l&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="pl-l mr-m mb-m">
+  &lt;div>
+    &lt;p>pl-l&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="ptb-l mr-m mb-m">
+  &lt;div>
+    &lt;p>ptb-l&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="prl-l mr-m mb-m">
+  &lt;div>
+    &lt;p>prl-l&lt;/p>
+  &lt;/div>
+&lt;/div></code>
+          </pre>
+        </div>
+
+        <div class="mb-xl">
+          <h3 class="mtb-s">Margin Examples</h3>
+          <p class="mb-s">
+            In the following examples margin is set to the inner div.
+          </p>
+          <div class="margin-example-div">
+            <div class="margin-example-outer mr-m mb-m">
+              <div class="margin-example-inner m-0">
+                <p>m-0</p>
+              </div>
+            </div>
+            <div class="margin-example-outer mr-m mb-m">
+              <div class="margin-example-inner m-xs">
+                <p>m-xs</p>
+              </div>
+            </div>
+            <div class="margin-example-outer mr-m mb-m">
+              <div class="margin-example-inner m-s">
+                <p>m-s</p>
+              </div>
+            </div>
+            <div class="margin-example-outer mr-m mb-m">
+              <div class="margin-example-inner m-m">
+                <p>m-m</p>
+              </div>
+            </div>
+            <div class="margin-example-outer mr-m mb-m">
+              <div class="margin-example-inner m-l">
+                <p>m-l</p>
+              </div>
+            </div>
+            <div class="margin-example-outer mr-m mb-m">
+              <div class="margin-example-inner m-xl">
+                <p>m-xl</p>
+              </div>
+            </div>
+            <div class="margin-example-outer mr-m mb-m">
+              <div class="margin-example-inner m-xxl">
+                <p>m-xxl</p>
+              </div>
+            </div>
+          </div>
+          <pre>
+            <code class="code-block p-m">&lt;div class="mr-m mb-m">
+  &lt;div class="m-0">
+    &lt;p>m-0&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="mr-m mb-m">
+  &lt;div class="m-xs">
+    &lt;p>m-xs&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="mr-m mb-m">
+  &lt;div class="m-s">
+    &lt;p>m-s&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="mr-m mb-m">
+  &lt;div class="m-m">
+    &lt;p>m-m&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="mr-m mb-m">
+  &lt;div class="m-l">
+    &lt;p>m-l&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="mr-m mb-m">
+  &lt;div class="m-xl">
+    &lt;p>m-xl&lt;/p>
+  &lt;/div>
+&lt;/div>
+&lt;div class="mr-m mb-m">
+  &lt;div class="m-xxl">
+    &lt;p>m-xxl&lt;/p>
+  &lt;/div>
+&lt;/div></code>
+          </pre>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content mtb-m">
+        <ul class="footer-menu mb-m">
+          <li><a class="link" href="../index.html">Home</a></li>
+          <li><a class="link" href="components.html">Components</a></li>
+          <li><a class="link" href="#">Utilities</a></li>
+          <li><a class="link" href="flexandgrid.html">Flex & Grid</a></li>
+        </ul>
+        <h2>CSS Library</h2>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  box-shadow: var(--box-shadow-down);
+  width: 100%;
+  height: 50px;
+  z-index: 2;
+
+  &-absolute {
+    position: absolute;
+  }
+  .link {
+    color: var(--fg-primary);
+    width: 100%;
+  }
+  .link:hover,
+  .link-active {
+    color: var(--accent-secondary-darken);
+  }
+  &.nav-sticky-on {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.nav-transparent {
+  &.nav-transparent-on {
+    background-color: transparent;
+    box-shadow: none;
+
+    &.nav-font-white {
+      .nav-title a,
+      .nav-title {
+        color: white;
+      }
+      .icon-bars .bar {
+        background-color: white;
+      }
+      .icon-bars:hover .bar {
+        background-color: var(--accent-secondary);
+      }
+      .nav-menu:not(.dropdown) .link {
+        color: white;
+      }
+      .nav-menu:not(.dropdown) .link:hover,
+      .nav-menu:not(.dropdown) .link-active {
+        color: var(--accent-secondary-darken);
+      }
+    }
+
+    &.nav-font-black {
+      .nav-title a,
+      .nav-title {
+        color: black;
+      }
+      .icon-bars .bar {
+        background-color: black;
+      }
+      .icon-bars:hover .bar {
+        background-color: var(--accent-secondary);
+      }
+      .nav-menu:not(.dropdown) .link {
+        color: black;
+      }
+      .nav-menu:not(.dropdown) .link:hover,
+      .nav-menu:not(.dropdown) .link-active {
+        color: var(--accent-secondary-darken);
+      }
+    }
+  }
+
+  .icon-bars:hover .bar {
+    background-color: var(--accent-secondary-darken);
+  }
+}
+
+.nav-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: $xl;
+}
+
+.nav-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-menu {
+  display: none;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+
+  &.hide {
+    display: none;
+  }
+
+  * {
+    margin-right: $base-margin * 2;
+  }
+
+  *:last-of-type {
+    margin-right: 0;
+  }
+
+  @include sm {
+    &.sm-show {
+      display: flex;
+    }
+  }
+  @include md {
+    &.md-show {
+      display: flex;
+    }
+  }
+  @include lg {
+    &.lg-show {
+      display: flex;
+    }
+  }
+  @include xl {
+    &.xl-show {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>CSS Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../library/nav.js"></script>
+  </head>
+  <body>
+    <div class="nav nav-sticky">
+      <div class="nav-content">
+        <h1 class="nav-title mr-s"><a href="../index.html">CSS Library</a></h1>
+        <nav>
+          <button id="nav-toggle" class="icon-bars sm-hide">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="nav-menu" class="nav-menu sm-show">
+            <li><a class="link" href="../index.html">Home</a></li>
+            <li><a class="link link-active" href="#/">Components</a></li>
+            <li><a class="link" href="utilities.html">Utilities</a></li>
+            <li><a class="link" href="flexandgrid.html">Flex & Grid</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main class="mrl-auto">
+      <div class="mtb-xxl">
+        <h2 class="mb-l">Buttons</h2>
+        <div class="mb-xl">
+          <button class="btn btn-primary mb-xs">primary</button>
+          <button class="btn btn-secondary mb-xs">secondary</button>
+          <button class="btn btn-success mb-xs">success</button>
+          <button class="btn btn-danger mb-xs">danger</button>
+          <button class="btn btn-warning mb-xs">warning</button>
+          <button class="btn btn-info mb-xs">info</button>
+          <button class="btn btn-white mb-xs">white</button>
+          <button class="btn btn-light mb-xs">light</button>
+          <button class="btn btn-dark mb-xs">dark</button>
+          <pre>
+            <code class="code-block p-m">&lt;button class="btn btn-primary mb-xs">primary&lt;/button>
+&lt;button class="btn btn-secondary mb-xs">secondary&lt;/button>
+&lt;button class="btn btn-success mb-xs">success&lt;/button>
+&lt;button class="btn btn-danger mb-xs">danger&lt;/button>
+&lt;button class="btn btn-warning mb-xs">warning&lt;/button>
+&lt;button class="btn btn-info mb-xs">info&lt;/button>
+&lt;button class="btn btn-white mb-xs">white&lt;/button>
+&lt;button class="btn btn-light mb-xs">light&lt;/button>
+&lt;button class="btn btn-dark mb-xs">dark&lt;/button></code>
+          </pre>
+        </div>
+        <h3 class="mb-s">Disabled</h3>
+        <div class="mb-xl">
+          <button class="btn btn-disabled btn-primary mb-xs">primary</button>
+          <button class="btn btn-disabled btn-secondary mb-xs">
+            secondary
+          </button>
+          <button class="btn btn-disabled btn-success mb-xs">success</button>
+          <button class="btn btn-disabled btn-danger mb-xs">danger</button>
+          <button class="btn btn-disabled btn-warning mb-xs">warning</button>
+          <button class="btn btn-disabled btn-info mb-xs">info</button>
+          <button class="btn btn-disabled btn-white mb-xs">white</button>
+          <button class="btn btn-disabled btn-light mb-xs">light</button>
+          <button class="btn btn-disabled btn-dark mb-xs">dark</button>
+          <pre>
+            <code class="code-block p-m">&lt;button class="btn btn-disabled btn-primary mb-xs">primary&lt;/button>
+&lt;button class="btn btn-disabled btn-secondary mb-xs">secondary&lt;/button>
+&lt;button class="btn btn-disabled btn-success mb-xs">success&lt;/button>
+&lt;button class="btn btn-disabled btn-danger mb-xs">danger&lt;/button>
+&lt;button class="btn btn-disabled btn-warning mb-xs">warning&lt;/button>
+&lt;button class="btn btn-disabled btn-info mb-xs">info&lt;/button>
+&lt;button class="btn btn-disabled btn-white mb-xs">white&lt;/button>
+&lt;button class="btn btn-disabled btn-light mb-xs">light&lt;/button>
+&lt;button class="btn btn-disabled btn-dark mb-xs">dark&lt;/button></code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="mb-xxl">
+        <h2 class="mb-l">Links</h2>
+        <div>
+          <a class="link mr-s" href="#/">Link</a>
+          <a class="link link-active mr-s" href="#/">Active</a>
+          <a class="link link-disabled" href="#/">Disabled</a>
+        </div>
+        <pre>
+          <code class="code-block p-m">&lt;a class="link mr-s" href="#/">Link&lt;/a>
+&lt;a class="link link-active mr-s" href="#/">Active&lt;/a>
+&lt;a class="link link-disabled" href="#/">Disabled&lt;/a></code>
+        </pre>
+      </div>
+
+      <div class="mb-xxl">
+        <h2 class="mb-l">Icons</h2>
+        <div class="grid">
+          <div class="col-4 col-2-sm col-1-lg mb-l">
+            <h3 class="mb-s">Menu</h3>
+            <a class="icon-bars component-example">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+          </div>
+          <div class="col-4 col-2-sm col-1-lg mb-l">
+            <h3 class="mb-s">Close</h3>
+            <button class="icon-close">
+              <span class="font-xl" aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+        <p>Menu:</p>
+        <pre>
+          <code class="code-block p-m">&lt;a class="icon-bars">
+  &lt;span class="bar">&lt;/span>
+  &lt;span class="bar">&lt;/span>
+  &lt;span class="bar">&lt;/span>
+&lt;/a></code>
+        </pre>
+        <p>Close:</p>
+        <pre>
+          <code class="code-block p-m">&lt;button class="icon-close">
+  &lt;span class="font-xl" aria-hidden="true">&amp;times;&lt;/span>
+&lt;/button></code>
+        </pre>
+      </div>
+
+      <div class="mb-xxl">
+        <h2 class="mb-l">Dropdown</h2>
+        <ul class="nav-menu dropdown component-example">
+          <li><a class="link" href="#/">Some link</a></li>
+          <li><a class="link" href="#/">Link</a></li>
+          <li><a class="link" href="#/">Link</a></li>
+          <li><a class="link" href="#/">Another link</a></li>
+        </ul>
+        <pre>
+          <code class="code-block p-m">&lt;ul class="nav-menu dropdown">
+  &lt;li>&lt;a class="link" href="#/">Some link&lt;/a>&lt;/li>
+  &lt;li>&lt;a class="link" href="#/">Link&lt;/a>&lt;/li>
+  &lt;li>&lt;a class="link" href="#/">Link&lt;/a>&lt;/li>
+  &lt;li>&lt;a class="link" href="#/">Another link&lt;/a>&lt;/li>
+&lt;/ul></code>
+        </pre>
+      </div>
+
+      <div class="mb-xxl">
+        <h2 class="mb-l">Nav</h2>
+        <div class="nav-example-container">
+          <div class="nav component-example nav-example">
+            <div class="nav-content">
+              <h1 class="nav-title">Nav</h1>
+              <nav>
+                <button class="icon-bars sm-hide nav-toggle-example">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </button>
+                <ul class="nav-menu sm-show nav-menu-example">
+                  <li><a class="link" href="#/">Link</a></li>
+                  <li><a class="link" href="#/">Link</a></li>
+                  <li><a class="link link-active" href="#/">Active link</a></li>
+                  <li>
+                    <a class="link link-disabled" href="#/">Disabled Link</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code class="code-block p-m">&lt;div class="nav">
+  &lt;div class="nav-content">
+    &lt;h1 class="nav-title">Nav&lt;/h1>
+    &lt;nav>
+      &lt;button class="icon-bars sm-hide">
+        &lt;span class="bar">&lt;/span>
+        &lt;span class="bar">&lt;/span>
+        &lt;span class="bar">&lt;/span>
+      &lt;/button>
+      &lt;ul class="nav-menu sm-show">
+        &lt;li>&lt;a class="link" href="#/">Link&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link" href="#/">Link&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link link-active" href="#/">Active link&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link link-disabled" href="#/">Disabled Link&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/nav>
+  &lt;/div>
+&lt;/div></code>
+        </pre>
+
+        <h3 class="mb-s">Transparent</h3>
+        <div class="nav-example-container">
+          <div
+            class="
+              nav
+              component-example
+              nav-example nav-transparent nav-transparent-on nav-font-black
+            "
+          >
+            <div class="nav-content">
+              <h1 class="nav-title">Nav</h1>
+              <nav>
+                <button
+                  id="transpar"
+                  class="icon-bars sm-hide nav-toggle-example"
+                >
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </button>
+                <ul class="nav-menu sm-show nav-menu-example">
+                  <li><a class="link" href="#/">Link</a></li>
+                  <li><a class="link" href="#/">Link</a></li>
+                  <li><a class="link link-active" href="#/">Active link</a></li>
+                  <li>
+                    <a class="link link-disabled" href="#/">Disabled Link</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code class="code-block p-m">&lt;div class="nav nav-transparent nav-transparent-on nav-font-black">
+  &lt;div class="nav-content">
+    &lt;h1 class="nav-title">Nav&lt;/h1>
+    &lt;nav>
+      &lt;button class="icon-bars sm-hide">
+        &lt;span class="bar">&lt;/span>
+        &lt;span class="bar">&lt;/span>
+        &lt;span class="bar">&lt;/span>
+      &lt;/button>
+      &lt;ul class="nav-menu sm-show">
+        &lt;li>&lt;a class="link" href="#/">Link&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link" href="#/">Link&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link link-active" href="#/">Active link&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link link-disabled" href="#/">Disabled Link&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/nav>
+  &lt;/div>
+&lt;/div></code>
+        </pre>
+
+        <h3 class="mb-s">Sticky</h3>
+        <p class="mb-xs">
+          Use class <code class="p-xs font-s">nav-sticky</code> to make nav
+          sticky on scroll.
+        </p>
+        <pre>
+          <code class="code-block p-m">&lt;div class="nav nav-sticky">
+  ...
+&lt;/div></code>
+          </pre>
+      </div>
+
+      <div class="mb-xxl">
+        <h2 class="mb-l">Footer</h2>
+        <div class="footer-example-container">
+          <div class="footer footer-example">
+            <div class="footer-content mtb-m">
+              <ul class="footer-menu mb-m">
+                <li><a class="link" href="#/">Some link</a></li>
+                <li><a class="link" href="#/">Link</a></li>
+                <li><a class="link" href="#/">Link</a></li>
+                <li><a class="link" href="#/">Another link</a></li>
+              </ul>
+              <h2>Footer</h2>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code class="code-block p-m">&lt;div class="footer">
+  &lt;div class="footer-content mtb-m">
+    &lt;ul class="footer-menu mb-m">
+        &lt;li>&lt;a class="link" href="#/">Some link&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link" href="#/">Link&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link" href="#/">Link&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link" href="#/">Another link&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;h2>Footer&lt;/h2>
+  &lt;/div>
+&lt;/div></code>
+        </pre>
+      </div>
+
+      <div class="mb-xxl">
+        <h2 class="mb-l">Card</h2>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+            alt="Card"
+          />
+          <div class="card-content">
+            <h3 class="card-title">Card title</h3>
+            <p class="card-p">
+              Simple card text. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Asperiores, accusamus?Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quidem, explicabo iure nostrum,
+              omnis consectetur voluptatibus autem recusandae iusto ratione
+              tempora eos aut optio. Asperiores quia voluptate odit non ea
+              harum.
+            </p>
+            <button class="btn btn-primary">primary</button>
+            <button class="btn btn-danger">danger</button>
+          </div>
+        </div>
+        <pre>
+          <code class="code-block p-m">&lt;div class="card">
+  &lt;img class="card-img" src="https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="Card" />
+  &lt;div class="card-content">
+    &lt;h3 class="card-title">Card title&lt;/h3>
+    &lt;p class="card-p">
+      Simple card text. Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Asperiores, accusamus?Lorem ipsum dolor 
+      sit amet consectetur adipisicing elit. Quidem, explicabo 
+      iure nostrum, omnis consectetur voluptatibus autem recusandae 
+      iusto ratione tempora eos aut optio. Asperiores quia voluptate 
+      odit non ea harum.
+    &lt;/p>
+    &lt;button class="btn btn-primary">primary&lt;/button>
+    &lt;button class="btn btn-danger">danger&lt;/button>
+  &lt;/div>
+&lt;/div></code>
+        </pre>
+        <p>
+          In this example, in addition to the default styles, max-height has
+          been set to the <code class="p-xs font-s">card-img</code> class.
+        </p>
+        <pre>
+          <code class="code-block p-m">.card-img {
+  max-height: 200px;
+}</code>
+        </pre>
+      </div>
+
+      <div class="mb-xxl">
+        <h2 class="mb-l">Hero</h2>
+        <div class="hero-example-container">
+          <div class="hero hero-example mb-s">
+            <img
+              class="hero-img"
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+              alt="hero"
+            />
+            <div class="hero-content p-l">
+              <h1 class="mb-s font-xl font-white">This is a hero</h1>
+              <p class="mb-l font-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                ipsam eius neque totam, assumenda necessitatibus nesciunt odit
+                itaque dolor sit!
+              </p>
+              <a href="#/" class="btn btn-white m-s">Example button</a>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code class="code-block p-m">&lt;div class="hero mb-s">
+  &lt;img
+    class="hero-img"
+    src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+    alt="hero"
+  />
+  &lt;div class="hero-content p-l">
+    &lt;h1 class="mb-s font-xl font-white">This is a hero&lt;/h1>
+    &lt;p class="mb-l font-white">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+      ipsam eius neque totam, assumenda necessitatibus nesciunt odit
+      itaque dolor sit!
+    &lt;/p>
+    &lt;a href="#/" class="btn btn-white m-s">Example button&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+        </pre>
+
+        <div class="hero-example-container">
+          <div class="hero hero-example mb-s">
+            <div class="hero-content p-l">
+              <h1 class="mb-s font-xl">This is a hero without an image</h1>
+              <p class="mb-l">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                minus exercitationem eveniet, debitis libero id consectetur
+                suscipit facere enim repudiandae.
+              </p>
+              <a href="#/" class="btn btn-primary m-s">Example button</a>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code class="code-block p-m">&lt;div class="hero mb-s">
+  &lt;div class="hero-content p-l">
+    &lt;h1 class="mb-s font-xl">This is a hero without an image&lt;/h1>
+    &lt;p class="mb-l">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+      minus exercitationem eveniet, debitis libero id consectetur
+      suscipit facere enim repudiandae.
+    &lt;/p>
+    &lt;a href="#/" class="btn btn-primary m-s">Example button&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+        </pre>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content mtb-m">
+        <ul class="footer-menu mb-m">
+          <li><a class="link" href="../index.html">Home</a></li>
+          <li><a class="link" href="#">Components</a></li>
+          <li><a class="link" href="utilities.html">Utilities</a></li>
+          <li><a class="link" href="flexandgrid.html">Flex & Grid</a></li>
+        </ul>
+        <h2>CSS Library</h2>
+      </div>
+    </footer>
+    <script>
+      const toggleExamples = document.querySelectorAll(".nav-toggle-example");
+      const menuExamples = document.querySelectorAll(".nav-menu-example");
+
+      // Toggle example dropdown menus
+      toggleExamples.forEach((toggle) => {
+        toggle.addEventListener("click", (e) => {
+          const nav = toggle.parentNode;
+          const navBar = nav.parentNode.parentNode;
+          const menu = nav.querySelector(".nav-menu-example");
+
+          // toggle dropdown
+          menu.classList.toggle("dropdown");
+
+          // if nav is transparent, add default background color when dropdown is open.
+          if (
+            navBar.classList.contains("nav-transparent") &&
+            menu.classList.contains("dropdown")
+          ) {
+            navBar.classList.remove("nav-transparent-on");
+          } else {
+            navBar.classList.add("nav-transparent-on");
+          }
+        });
+      });
+
+      window.addEventListener("resize", function () {
+        menuExamples.forEach((menu) => {
+          menu.classList.remove("dropdown");
+        });
+      });
+    </script>
+  </body>
+</html>

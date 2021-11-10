@@ -1,0 +1,36 @@
+:root {
+  --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  --box-shadow-up: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  --box-shadow-down: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --border-radius: 3px;
+}
+
+$sizes: (
+  "0": 0,
+  "xs": 0.7,
+  "s": 0.85,
+  "m": 1,
+  "l": 1.5,
+  "xl": 2,
+  "xxl": 3,
+);
+
+$base-font-size: 1rem;
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+@each $name, $size in $sizes {
+  .font-#{$name} {
+    font-size: $base-font-size * $size;
+  }
+}
+
+$font-colors: "white", "black", "bg-primary", "bg-secondary", "fg-primary",
+  "fg-secondary", "accent-primary", "accent-secondary", "danger", "warning",
+  "success", "info";
+
+@each $color in $font-colors {
+  .font-#{$color} {
+    color: var(--#{$color});
+  }
+}

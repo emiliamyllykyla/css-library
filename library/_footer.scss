@@ -1,0 +1,26 @@
+.footer {
+    display: grid;
+    place-items: center;
+    background-color: var(--bg-secondary);
+    box-shadow: var(--box-shadow-up);
+    min-height: 100px;
+    width: 100%;
+    padding: $base-padding * 1.5 $base-padding * 3;
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-menu {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .link {
+        margin-right: $base-margin * 2;
+    }
+}
+

@@ -1,0 +1,22 @@
+@mixin flex-row {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.flex-row {
+  @include flex-row;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex-grow: 1;
+}
+
+.flex-row-even {
+  @include flex-row;
+  .flex-item {
+    width: 100%;
+  }
+}

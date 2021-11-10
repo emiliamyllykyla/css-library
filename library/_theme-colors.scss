@@ -1,0 +1,53 @@
+$contextual-colors: (
+  "danger": #bf616a,
+  "warning": #ebcb8b,
+  "success": #a3be8c,
+  "info": #88c0d0,
+  "danger-darken": scale-color(#bf616a, $lightness: -10%),
+  "warning-darken": scale-color(#ebcb8b, $lightness: -10%),
+  "success-darken": scale-color(#a3be8c, $lightness: -10%),
+  "info-darken": scale-color(#88c0d0, $lightness: -10%),
+);
+
+$accents: (
+  "primary": #5e81ac,
+  "primary-darken": scale-color(#5e81ac, $lightness: -10%),
+  "secondary": #81a1c1,
+  "secondary-darken": scale-color(#81a1c1, $lightness: -10%),
+);
+
+:root {
+  --color-00: #eceff4;
+  --color-01: #d8dee9;
+  --color-02: #2e3440;
+  --color-03: #3b4252;
+
+  --accent-primary-darken: #456893;
+  --accent-secondary-darken: #6888a8;
+
+  --white: white;
+  --black: black;
+
+  @each $name, $hex in $accents {
+    --accent-#{$name}: #{$hex};
+  }
+
+  @each $name, $hex in $contextual-colors {
+    --#{$name}: #{$hex};
+  }
+
+  // color-scheme: light
+  --bg-primary: var(--white);
+  --bg-secondary: var(--color-00);
+  --fg-primary: var(--color-02);
+  --fg-secondary: var(--color-03);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: var(--color-02);
+    --bg-secondary: var(--color-03);
+    --fg-primary: var(--color-00);
+    --fg-secondary: var(--color-01);
+  }
+}

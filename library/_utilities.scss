@@ -1,0 +1,51 @@
+$u-sizes: (
+  "0": 0,
+  "xs": 0.4,
+  "s": 0.8,
+  "m": 1,
+  "l": 2,
+  "xl": 4,
+  "xxl": 6,
+  "auto": auto,
+);
+
+$space-utilities: (
+  "p": "padding",
+  "m": "margin",
+);
+
+@each $key, $value in $space-utilities {
+  @each $name, $size in $u-sizes {
+    $s: auto;
+    @if ($size != auto) {
+      $s: $base-margin * $size;
+      @if ($value == "padding") {
+        $s: $base-padding * $size;
+      }
+    }
+
+    .#{$key}-#{$name} {
+      #{$value}: $s;
+    }
+    .#{$key}t-#{$name} {
+      #{$value}-top: $s;
+    }
+    .#{$key}r-#{$name} {
+      #{$value}-right: $s;
+    }
+    .#{$key}b-#{$name} {
+      #{$value}-bottom: $s;
+    }
+    .#{$key}l-#{$name} {
+      #{$value}-left: $s;
+    }
+    .#{$key}rl-#{$name} {
+      #{$value}-right: $s;
+      #{$value}-left: $s;
+    }
+    .#{$key}tb-#{$name} {
+      #{$value}-top: $s;
+      #{$value}-bottom: $s;
+    }
+  }
+}

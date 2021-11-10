@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>CSS Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../library/nav.js"></script>
+  </head>
+  <body>
+    <div class="nav nav-sticky">
+      <div class="nav-content">
+        <h1 class="nav-title mr-s"><a href="../index.html">CSS Library</a></h1>
+        <nav>
+          <button id="nav-toggle" class="icon-bars sm-hide">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="nav-menu" class="nav-menu sm-show">
+            <li><a class="link" href="../index.html">Home</a></li>
+            <li><a class="link" href="components.html">Components</a></li>
+            <li><a class="link" href="utilities.html">Utilities</a></li>
+            <li><a class="link link-active" href="#/">Flex & Grid</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main class="mrl-auto">
+      <div class="mtb-xxl">
+        <h2 class="mtb-l">Flex</h2>
+        <div class="mb-xl">
+          <h3 class="mb-s">flex-row</h3>
+          <p class="mb-s">Item width is based on content. Flex-wrap: wrap.</p>
+
+          <div class="flex-row">
+            <div class="flex-example-item flex-item card">
+              <p class="card-content">flex-item</p>
+            </div>
+            <div class="flex-example-item flex-item card">
+              <p class="card-content">larger flex-item</p>
+            </div>
+            <div class="flex-example-item flex-item card">
+              <p class="card-content">
+                larger flex-item with this much content
+              </p>
+            </div>
+            <div class="flex-example-item flex-item card">
+              <p class="card-content">
+                flex-item with this much content Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Odit aliquid asperiores culpa
+                facere? Totam ipsum qui at saepe, accusamus, iusto reiciendis
+                alias harum quia vero atque accusantium facilis perferendis
+                recusandae.
+              </p>
+            </div>
+          </div>
+          <pre>
+            <code class="code-block p-m">&lt;div class="flex-row">
+  &lt;div class="flex-item card">
+    &lt;p class="card-content">flex-item&lt;/p>
+  &lt;/div>
+  &lt;div class="flex-item card">
+    &lt;p class="card-content">larger flex-item&lt;/p>
+  &lt;/div>
+  &lt;div class="flex-item card">
+    &lt;p class="card-content">
+      larger flex-item with this much content
+    &lt;/p>
+  &lt;/div>
+  &lt;div class="flex-item card">
+    &lt;p class="card-content">
+      flex-item with this much content Lorem ipsum dolor sit, amet
+      consectetur adipisicing elit. Odit aliquid asperiores culpa
+      facere? Totam ipsum qui at saepe, accusamus, iusto reiciendis
+      alias harum quia vero atque accusantium facilis perferendis
+      recusandae.
+    &lt;/p>
+  &lt;/div>
+&lt;/div></code>
+          </pre>
+        </div>
+
+        <div class="mb-xl">
+          <h3 class="mb-s">flex-row-even</h3>
+          <p class="mb-s">Every item has the same width. No wrap.</p>
+          <div class="flex-row-even">
+            <div class="flex-example-item flex-item card">
+              <p class="card-content">flex-item</p>
+            </div>
+            <div class="flex-example-item flex-item card">
+              <p class="card-content">larger flex-item</p>
+            </div>
+            <div class="flex-example-item flex-item card">
+              <p class="card-content">larger flex-item</p>
+            </div>
+            <div class="flex-example-item flex-item card">
+              <p class="card-content">flex-item with this much content</p>
+            </div>
+          </div>
+          <pre>
+            <code class="code-block p-m">&lt;div class="flex-row-even">
+  &lt;div class="flex-item card">
+    &lt;p class="card-content">flex-item&lt;/p>
+  &lt;/div>
+  &lt;div class="flex-item card">
+    &lt;p class="card-content">larger flex-item&lt;/p>
+  &lt;/div>
+  &lt;div class="flex-item card">
+    &lt;p class="card-content">larger flex-item&lt;/p>
+  &lt;/div>
+  &lt;div class="flex-item card">
+    &lt;p class="card-content">flex-item with this much content&lt;/p>
+  &lt;/div>
+&lt;/div></code>
+          </pre>
+        </div>
+      </div>
+
+      <div class="mb-xxl">
+        <h2 class="mtb-l">Grid</h2>
+        <div class="mb-xl">
+          <h3 class="mb-s">Column span or start / end</h3>
+          <p class="mb-s">
+            Class col-(value) determines property grid-column: span (value).
+            Possible values: 1-12. <br />Class col-(start)-(end) determines the
+            property grid-column: (start) / (end). Possible values: 1-13.
+          </p>
+          <div class="grid">
+            <div class="grid-example-item col-2 card">
+              <p class="card-content">col-2</p>
+            </div>
+            <div class="grid-example-item col-2 card">
+              <p class="card-content">col-2</p>
+            </div>
+            <div class="grid-example-item col-3 card">
+              <p class="card-content">col-3</p>
+            </div>
+            <div class="grid-example-item col-12 card">
+              <p class="card-content">col-12</p>
+            </div>
+            <div class="grid-example-item col-2-4 card">
+              <p class="card-content">col-2-4</p>
+            </div>
+            <div class="grid-example-item col-6-13 card">
+              <p class="card-content">col-6-13</p>
+            </div>
+          </div>
+          <pre>
+            <code class="code-block p-m">&lt;div class="grid">
+  &lt;div class="col-2 card">
+    &lt;p class="card-content">col-2&lt;/p>
+  &lt;/div>
+  &lt;div class="col-2 card">
+    &lt;p class="card-content">col-2&lt;/p>
+  &lt;/div>
+  &lt;div class="col-3 card">
+    &lt;p class="card-content">col-3&lt;/p>
+  &lt;/div>
+  &lt;div class="col-12 card">
+    &lt;p class="card-content">col-12&lt;/p>
+  &lt;/div>
+  &lt;div class="col-2-4 card">
+    &lt;p class="card-content">col-2-4&lt;/p>
+  &lt;/div>
+  &lt;div class="col-6-13 card">
+    &lt;p class="card-content">col-6-13&lt;/p>
+  &lt;/div>
+&lt;/div></code>
+          </pre>
+        </div>
+        <div class="mb-xl">
+          <h3 class="mb-s">Responsiveness with breakpoints</h3>
+          <div class="mb-s">
+            <p>
+              Resize items based on screen width. Use class
+              col-(span)-(breakpoint) or col-(start)-(end)-(breakpoint).
+              <span class="breakpoint">Current breakpoint: </span>
+            </p>
+          </div>
+          <div class="grid">
+            <div class="grid-example-item col-12 col-8-md col-3-lg card">
+              <p class="card-content">
+                Item 1: <br />col-12 <br />col-8-md <br />col-3-lg
+              </p>
+            </div>
+            <div
+              class="grid-example-item col-12 col-4-sm col-4-md col-3-lg card"
+            >
+              <p class="card-content">
+                Item 2: <br />col-12 <br />col-4-sm <br />col-4-md
+                <br />col-3-lg
+              </p>
+            </div>
+            <div
+              class="grid-example-item col-12 col-4-sm col-6-md col-3-lg card"
+            >
+              <p class="card-content">
+                Item 3: <br />col-12 <br />col-4-sm <br />col-6-md
+                <br />col-3-lg
+              </p>
+            </div>
+            <div
+              class="grid-example-item col-12 col-4-sm col-6-md col-3-lg card"
+            >
+              <p class="card-content">
+                Item 4: <br />col-12 <br />col-4-sm <br />col-6-md
+                <br />col-3-lg
+              </p>
+            </div>
+          </div>
+          <pre>
+            <code class="code-block p-m">&lt;div class="grid">
+  &lt;div class="col-12 col-8-md col-3-lg card">
+    &lt;p class="card-content">
+      Item 1: &lt;br />col-12 &lt;br />col-8-md &lt;br />col-3-lg
+    &lt;/p>
+  &lt;/div>
+  &lt;div class="col-12 col-4-sm col-4-md col-3-lg card">
+    &lt;p class="card-content">
+      Item 2: &lt;br />col-12 &lt;br />col-4-sm &lt;br />col-4-md &lt;br />col-3-lg
+    &lt;/p>
+  &lt;/div>
+  &lt;div class="col-12 col-4-sm col-6-md col-3-lg card">
+    &lt;p class="card-content">
+      Item 3: &lt;br />col-12 &lt;br />col-4-sm &lt;br />col-6-md &lt;br />col-3-lg
+    &lt;/p>
+  &lt;/div>
+  &lt;div class="col-12 col-4-sm col-6-md col-3-lg card">
+    &lt;p class="card-content">
+      Item 4: &lt;br />col-12 &lt;br />col-4-sm &lt;br />col-6-md &lt;br />col-3-lg
+    &lt;/p>
+  &lt;/div>
+&lt;/div></code>
+          </pre>
+        </div>
+        <h3 class="mb-s">Breakpoints</h3>
+        <table>
+          <tbody>
+            <tr>
+              <th class="th pr-s">sm</th>
+              <td>576px</td>
+            </tr>
+            <tr>
+              <th class="th pr-s">md</th>
+              <td>768px</td>
+            </tr>
+            <tr>
+              <th class="th pr-s">lg</th>
+              <td>992px</td>
+            </tr>
+            <tr>
+              <th class="th pr-s">xl</th>
+              <td>1200px</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content mtb-m">
+        <ul class="footer-menu mb-m">
+          <li><a class="link" href="../index.html">Home</a></li>
+          <li><a class="link" href="components.html">Components</a></li>
+          <li><a class="link" href="utilities.html">Utilities</a></li>
+          <li><a class="link" href="#">Flex & Grid</a></li>
+        </ul>
+        <h2>CSS Library</h2>
+      </div>
+    </footer>
+  </body>
+</html>

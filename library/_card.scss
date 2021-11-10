@@ -1,0 +1,21 @@
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  height: min-content;
+  overflow: hidden;
+
+  .card-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .card-content {
+    padding: $base-padding * 1.5;
+  }
+  .card-title {
+    margin-bottom: $base-margin * 0.4;
+  }
+  .card-p {
+    margin-bottom: $base-margin;
+  }
+}

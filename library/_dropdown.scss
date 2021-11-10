@@ -1,0 +1,28 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 1;
+  background-color: var(--bg-secondary);
+  box-shadow: var(--box-shadow-down);
+
+  &.sticky {
+    position: fixed;
+  }
+  * {
+    margin: 0;
+  }
+  .link {
+    display: block;
+    padding: $base-padding;
+    border-top: 1px solid var(--bg-primary);
+    color: var(--fg-primary);
+  }
+  .link:hover,
+  .link-active {
+    color: var(--accent-secondary);
+  }
+}
