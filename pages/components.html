@@ -34,6 +34,124 @@
     </div>
     <main class="mrl-auto">
       <div class="mtb-xxl">
+        <h2 class="mb-l">Card</h2>
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+            alt="Card"
+          />
+          <div class="card-content">
+            <h3 class="card-title">Card title</h3>
+            <p class="card-p">
+              Simple card text. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Asperiores, accusamus?Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quidem, explicabo iure nostrum,
+              omnis consectetur voluptatibus autem recusandae iusto ratione
+              tempora eos aut optio. Asperiores quia voluptate odit non ea
+              harum.
+            </p>
+            <button class="btn btn-primary">primary</button>
+            <button class="btn btn-danger">danger</button>
+          </div>
+        </div>
+        <pre>
+          <code class="code-block p-m">&lt;div class="card">
+  &lt;img class="card-img" src="https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="Card" />
+  &lt;div class="card-content">
+    &lt;h3 class="card-title">Card title&lt;/h3>
+    &lt;p class="card-p">
+      Simple card text. Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Asperiores, accusamus?Lorem ipsum dolor 
+      sit amet consectetur adipisicing elit. Quidem, explicabo 
+      iure nostrum, omnis consectetur voluptatibus autem recusandae 
+      iusto ratione tempora eos aut optio. Asperiores quia voluptate 
+      odit non ea harum.
+    &lt;/p>
+    &lt;button class="btn btn-primary">primary&lt;/button>
+    &lt;button class="btn btn-danger">danger&lt;/button>
+  &lt;/div>
+&lt;/div></code>
+        </pre>
+        <p>
+          In this example, in addition to the default styles, max-height has
+          been set to the <code class="p-xs font-s">card-img</code> class.
+        </p>
+        <pre>
+          <code class="code-block p-m">.card-img {
+  max-height: 200px;
+}</code>
+        </pre>
+      </div>
+
+      <div class="mb-xxl">
+        <h2 class="mb-l">Hero</h2>
+        <div class="hero-example-container">
+          <div class="hero hero-example mb-s">
+            <img
+              class="hero-img"
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+              alt="hero"
+            />
+            <div class="hero-content p-l">
+              <h1 class="mb-s font-xl font-white">This is a hero</h1>
+              <p class="mb-l font-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                ipsam eius neque totam, assumenda necessitatibus nesciunt odit
+                itaque dolor sit!
+              </p>
+              <a href="#/" class="btn btn-white m-s">Example button</a>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code class="code-block p-m">&lt;div class="hero mb-s">
+  &lt;img
+    class="hero-img"
+    src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+    alt="hero"
+  />
+  &lt;div class="hero-content p-l">
+    &lt;h1 class="mb-s font-xl font-white">This is a hero&lt;/h1>
+    &lt;p class="mb-l font-white">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+      ipsam eius neque totam, assumenda necessitatibus nesciunt odit
+      itaque dolor sit!
+    &lt;/p>
+    &lt;a href="#/" class="btn btn-white m-s">Example button&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+        </pre>
+
+        <div class="hero-example-container">
+          <div class="hero hero-example mb-s">
+            <div class="hero-content p-l">
+              <h1 class="mb-s font-xl">This is a hero without an image</h1>
+              <p class="mb-l">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                minus exercitationem eveniet, debitis libero id consectetur
+                suscipit facere enim repudiandae.
+              </p>
+              <a href="#/" class="btn btn-primary m-s">Example button</a>
+            </div>
+          </div>
+        </div>
+        <pre>
+          <code class="code-block p-m">&lt;div class="hero mb-s">
+  &lt;div class="hero-content p-l">
+    &lt;h1 class="mb-s font-xl">This is a hero without an image&lt;/h1>
+    &lt;p class="mb-l">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+      minus exercitationem eveniet, debitis libero id consectetur
+      suscipit facere enim repudiandae.
+    &lt;/p>
+    &lt;a href="#/" class="btn btn-primary m-s">Example button&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+        </pre>
+      </div>
+
+      <div class="mb-xxl">
         <h2 class="mb-l">Buttons</h2>
         <div class="mb-xl">
           <button class="btn btn-primary mb-xs">primary</button>
@@ -285,124 +403,6 @@
         &lt;li>&lt;a class="link" href="#/">Another link&lt;/a>&lt;/li>
     &lt;/ul>
     &lt;h2>Footer&lt;/h2>
-  &lt;/div>
-&lt;/div></code>
-        </pre>
-      </div>
-
-      <div class="mb-xxl">
-        <h2 class="mb-l">Card</h2>
-        <div class="card">
-          <img
-            class="card-img"
-            src="https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
-            alt="Card"
-          />
-          <div class="card-content">
-            <h3 class="card-title">Card title</h3>
-            <p class="card-p">
-              Simple card text. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Asperiores, accusamus?Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quidem, explicabo iure nostrum,
-              omnis consectetur voluptatibus autem recusandae iusto ratione
-              tempora eos aut optio. Asperiores quia voluptate odit non ea
-              harum.
-            </p>
-            <button class="btn btn-primary">primary</button>
-            <button class="btn btn-danger">danger</button>
-          </div>
-        </div>
-        <pre>
-          <code class="code-block p-m">&lt;div class="card">
-  &lt;img class="card-img" src="https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="Card" />
-  &lt;div class="card-content">
-    &lt;h3 class="card-title">Card title&lt;/h3>
-    &lt;p class="card-p">
-      Simple card text. Lorem ipsum dolor, sit amet consectetur
-      adipisicing elit. Asperiores, accusamus?Lorem ipsum dolor 
-      sit amet consectetur adipisicing elit. Quidem, explicabo 
-      iure nostrum, omnis consectetur voluptatibus autem recusandae 
-      iusto ratione tempora eos aut optio. Asperiores quia voluptate 
-      odit non ea harum.
-    &lt;/p>
-    &lt;button class="btn btn-primary">primary&lt;/button>
-    &lt;button class="btn btn-danger">danger&lt;/button>
-  &lt;/div>
-&lt;/div></code>
-        </pre>
-        <p>
-          In this example, in addition to the default styles, max-height has
-          been set to the <code class="p-xs font-s">card-img</code> class.
-        </p>
-        <pre>
-          <code class="code-block p-m">.card-img {
-  max-height: 200px;
-}</code>
-        </pre>
-      </div>
-
-      <div class="mb-xxl">
-        <h2 class="mb-l">Hero</h2>
-        <div class="hero-example-container">
-          <div class="hero hero-example mb-s">
-            <img
-              class="hero-img"
-              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
-              alt="hero"
-            />
-            <div class="hero-content p-l">
-              <h1 class="mb-s font-xl font-white">This is a hero</h1>
-              <p class="mb-l font-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                ipsam eius neque totam, assumenda necessitatibus nesciunt odit
-                itaque dolor sit!
-              </p>
-              <a href="#/" class="btn btn-white m-s">Example button</a>
-            </div>
-          </div>
-        </div>
-        <pre>
-          <code class="code-block p-m">&lt;div class="hero mb-s">
-  &lt;img
-    class="hero-img"
-    src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
-    alt="hero"
-  />
-  &lt;div class="hero-content p-l">
-    &lt;h1 class="mb-s font-xl font-white">This is a hero&lt;/h1>
-    &lt;p class="mb-l font-white">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-      ipsam eius neque totam, assumenda necessitatibus nesciunt odit
-      itaque dolor sit!
-    &lt;/p>
-    &lt;a href="#/" class="btn btn-white m-s">Example button&lt;/a>
-  &lt;/div>
-&lt;/div></code>
-        </pre>
-
-        <div class="hero-example-container">
-          <div class="hero hero-example mb-s">
-            <div class="hero-content p-l">
-              <h1 class="mb-s font-xl">This is a hero without an image</h1>
-              <p class="mb-l">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                minus exercitationem eveniet, debitis libero id consectetur
-                suscipit facere enim repudiandae.
-              </p>
-              <a href="#/" class="btn btn-primary m-s">Example button</a>
-            </div>
-          </div>
-        </div>
-        <pre>
-          <code class="code-block p-m">&lt;div class="hero mb-s">
-  &lt;div class="hero-content p-l">
-    &lt;h1 class="mb-s font-xl">This is a hero without an image&lt;/h1>
-    &lt;p class="mb-l">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-      minus exercitationem eveniet, debitis libero id consectetur
-      suscipit facere enim repudiandae.
-    &lt;/p>
-    &lt;a href="#/" class="btn btn-primary m-s">Example button&lt;/a>
   &lt;/div>
 &lt;/div></code>
         </pre>
